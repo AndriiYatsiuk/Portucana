@@ -1,0 +1,176 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* ======================================= */
+
+body {
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+
+/* ======================================= */
+.wraper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ======================================= */
+.page {
+  flex: 1 1 auto;
+}
+
+/* ======================================= */
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1199.98px) {
+  [class*="container"] {
+    max-width: 970px;
+  }
+
+}
+
+@media (max-width: 990.98px) {
+  [class*="container"] {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  [class*="container"] {
+    max-width: none;
+    padding: 0 15px;
+  }
+}
+
+/* ======================================= */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 103px;
+  width: 70%;
+  column-gap: 10px;
+  row-gap: 15px;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.header__logo {
+  background: url(./icons/potucanalogo.svg) 0 0 / 100% 100% no-repeat;
+  min-height: 173px;
+  min-width: 320px;
+}
+
+
+.header__menu {}
+
+/* ======================================= */
+.menu {}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 10px;
+
+}
+
+.menu__item {
+  font-size: 20px;
+}
+
+.menu__link {}
+
+@media(max-width: 767.98px) {
+  .menu__list {
+    justify-content: center;
+  }
+
+  .menu__link {
+    font-size: 16px;
+  }
+}
+
+/* ======================================= */
+
+.about {}
+
+.about__container {
+  width: 70%;
+}
+
+.wrapp {
+  display: flex;
+
+}
+
+.photo {
+  flex: 0 1 40%;
+  margin: 0 30px 0 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content {
+  flex: 0 1 60%;
+  margin: 0 0 0 30px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+p {
+  text-indent: 30px;
+}
+
+.title {}
+
+.text {}
